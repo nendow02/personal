@@ -1,0 +1,21 @@
+@import 'global';
+
+.about {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    max-width: 850px;
+    margin:auto
+}
+
+.image {
+    float: right;
+    width: 180px; //100/111 ratio
+    height: 200px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+}
+
+.text {
+    margin-top: 1px;
+}

@@ -1,0 +1,23 @@
+@import 'global';
+
+.contact {
+   text-align: center;
+}
+
+.text {
+    margin:0;
+}
+
+#links {
+    margin-top: 15px;
+    display: inline-flex;
+    margin-left: -10px;
+}
+
+.link {
+    padding-left: 10px;
+}
+
+.link:hover {
+    color: $font-hover;
+}

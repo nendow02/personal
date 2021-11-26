@@ -1,0 +1,71 @@
+@import 'global';
+
+$padding: 5vw;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $padding;
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.darkHead {
+    background-color: #393a3b;
+}
+
+.lightHead {
+    background-color: #ededed;
+}
+
+.darkBut {
+    background-color: transparent;
+    border: none;
+    margin-left: 5vw;
+    color: $font-light;
+}
+
+.darkBut:hover, .lightBut:hover {
+    color: $font-hover;
+    cursor: pointer;
+}
+
+.lightBut {
+    background-color: transparent;
+    border: none;
+    margin-left: 5vw;
+    color:$font-dark
+}
+
+#nav {
+    margin-right: calc(#{$padding} * 2);
+    font-size: 2vh;
+    @media (max-height: 700px) {
+     font-size: 15px;   
+    }
+}
+
+.navitem {
+    float: left;
+    margin-left: 3vw;
+}
+
+.navitem:hover {
+    color: $font-hover;
+}
+
+.name {
+    font-size: 4vh;
+    @media (max-height: 650px) {
+        font-size: 25px;   
+       }
+}
+
+.name:hover {
+    color: $font-hover;
+}

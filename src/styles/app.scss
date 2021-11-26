@@ -1,0 +1,50 @@
+@import 'global';
+
+body {
+  margin: 0;
+  font-family: $main-font;
+  padding:0;
+}
+
+#content {
+  margin-top: $header-height;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: calc(#{$header-height} + 30px);
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5c6061;
+  
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.dark {
+  color: $font-light
+}
+
+.light {
+  color:$font-dark
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
