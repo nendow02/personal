@@ -9,6 +9,7 @@ $padding: 5vw;
     padding-left: $padding;
     filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
     height: $header-height;
+    min-height: 55px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,8 +27,8 @@ $padding: 5vw;
 .darkBut {
     background-color: transparent;
     border: none;
-    margin-left: 5vw;
     color: $font-light;
+    font-size: 1.2em;
 }
 
 .darkBut:hover, .lightBut:hover {
@@ -38,21 +39,26 @@ $padding: 5vw;
 .lightBut {
     background-color: transparent;
     border: none;
-    margin-left: 5vw;
-    color:$font-dark
+    color:$font-dark;
+    font-size: 1.2em;
 }
 
 #nav {
     margin-right: calc(#{$padding} * 2);
-    font-size: 2vh;
-    @media (max-height: 700px) {
-     font-size: 15px;   
-    }
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
 }
 
 .navitem {
     float: left;
     margin-left: 3vw;
+    display: flex;
+    justify-content: center;
+}
+
+button.navitem {
+    margin-left: 5vw;
 }
 
 .navitem:hover {
@@ -60,10 +66,7 @@ $padding: 5vw;
 }
 
 .name {
-    font-size: 4vh;
-    @media (max-height: 650px) {
-        font-size: 25px;   
-       }
+    font-size: 2.5em;
 }
 
 .name:hover {
